@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="canvas" width="1400" height="600"> </canvas>
+
+    <h3 id="h3">   <a href="http://instagram.com/itz_mukesh_0018" target="_blank">  </a>  <span id="msg"></span></h3>
+    <div class="four-pointed-star"></div>
+    <div class="four-pointed-star1"></div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const h3 = document.getElementById("h3");
+
+    // type animation
+    var typed = new Typed("#msg", {
+      strings: ["I Love you . . . ",],
+      typeSpeed: 150,
+      BackSpeed: 300,
+      loop: true,
+    });
+
+ 
+  </script>
+  <script src="main.js"></script>
+</html>

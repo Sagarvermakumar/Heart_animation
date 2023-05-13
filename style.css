@@ -1,0 +1,104 @@
+
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  padding: 10px;
+  background-repeat: no-repeat;
+}
+h3 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  color: white;
+  font-size: 35px;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #f2f2f1;
+  font-weight: 200;
+
+  text-shadow: 2px 2px 2px rgb(245, 12, 129),
+  
+    5px 5px 20px rgb(101, 12, 245);
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
+
+/* star  */
+
+.four-pointed-star {
+  position: absolute;
+  margin: 0.5em auto;
+  width: 0.5em;
+  font-size: 3em;
+  top: 92px;
+  left: 90px;
+
+  font-weight: 200;
+  animation: staranimation 2s linear infinite;
+}
+
+@keyframes staranimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.four-pointed-star:before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  box-shadow:  1px 1px  12px 13px rgb(245, 12, 129);
+}
+
+.four-pointed-star:after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  box-shadow:  1px 1px  12px 13px rgb(245, 12, 129);
+}
+
+
+
+
+
+
+
+
+.four-pointed-star1 {
+  position: absolute;
+  margin: 0.5em auto;
+  width: 0.5em;
+  font-size: 3em;
+  bottom: 100px;
+  right: 120px;
+  font-weight: 200;
+  animation: staranimation 2s linear infinite;
+}
+
+.four-pointed-star1:before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  box-shadow:  1px 1px  12px 13px rgb(101, 12, 245);
+}
+
+.four-pointed-star1:after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 1em;
+  height: 1.15em;
+  box-shadow:  1px 1px  12px 13px rgb(101, 12, 245);
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  /* animation: staranimation 3s linear infinite  ; */
+}
